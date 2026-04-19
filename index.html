@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mäké — luxury haircare, crafted for the modern ritual. Join the waitlist." />
+  <title>Mäké — Luxury Haircare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="brand" aria-label="Mäké home">Mäké</a>
+      <ul class="nav-links">
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#ritual">Ritual</a></li>
+        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Arriving 2026</p>
+        <h1 class="hero-title">The art of hair,<br /><em>rewritten.</em></h1>
+        <p class="hero-sub">A quiet luxury of botanical science, rare oils, and rituals composed for the modern everyday.</p>
+        <a href="#waitlist" class="btn btn-primary">Reserve your place</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="bottle">
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span class="bottle-label">MÄKÉ</span>
+            <span class="bottle-sub">No. 01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="philosophy">
+      <div class="container">
+        <p class="eyebrow centered">Our Philosophy</p>
+        <h2>Haircare as considered<br />as the clothes you wear.</h2>
+        <p class="lede">
+          Mäké is a studio of formulators, perfumers, and trichologists devoted to a single belief:
+          that the most essential gesture of beauty deserves the most exacting craft.
+        </p>
+      </div>
+    </section>
+
+    <section id="collection" class="collection">
+      <div class="container">
+        <p class="eyebrow centered">The Collection</p>
+        <h2>Three formulas. Endless ritual.</h2>
+        <div class="products">
+          <article class="product">
+            <div class="product-visual" aria-hidden="true"><span>01</span></div>
+            <h3>The Cleanser</h3>
+            <p>A weightless micellar wash with bamboo silica and white tea — for strand-deep clarity without compromise.</p>
+          </article>
+          <article class="product">
+            <div class="product-visual" aria-hidden="true"><span>02</span></div>
+            <h3>The Conditioner</h3>
+            <p>Cold-pressed marula, rice bran, and prickly pear. A veil of softness that never weighs down.</p>
+          </article>
+          <article class="product">
+            <div class="product-visual" aria-hidden="true"><span>03</span></div>
+            <h3>The Elixir</h3>
+            <p>A finishing oil of Moroccan argan and Japanese camellia, scented with iris, bergamot, and cedar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ritual" class="ritual">
+      <div class="container ritual-grid">
+        <div>
+          <p class="eyebrow">The Ritual</p>
+          <h2>Small acts,<br />profoundly composed.</h2>
+          <p>
+            Every Mäké formula is blended in small batches in the South of France, bottled in
+            recyclable glass, and shipped in plant-based, carbon-balanced packaging. Nothing is rushed.
+            Nothing is ordinary.
+          </p>
+          <ul class="ritual-list">
+            <li>— Clean, clinically-backed formulations</li>
+            <li>— Cruelty-free and vegan</li>
+            <li>— Sustainably sourced botanicals</li>
+            <li>— Refillable, recyclable glass</li>
+          </ul>
+        </div>
+        <div class="ritual-visual" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="waitlist" class="waitlist">
+      <div class="container waitlist-inner">
+        <p class="eyebrow centered light">By Invitation</p>
+        <h2>Join the waitlist.</h2>
+        <p class="waitlist-copy">
+          Enter your details to receive our launch letter, early access to the first 500 bottles,
+          and a founders' gift reserved for our earliest members.
+        </p>
+        <form id="waitlist-form" class="waitlist-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="hairtype">Hair Type <span class="optional">(optional)</span></label>
+            <select id="hairtype" name="hairtype">
+              <option value="">Select one</option>
+              <option>Straight</option>
+              <option>Wavy</option>
+              <option>Curly</option>
+              <option>Coily</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-wide">Reserve my place</button>
+          <p class="form-note">We'll only write when there's something worth saying.</p>
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="brand small">Mäké</p>
+      <p class="copy">© <span id="year"></span> Mäké Paris. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
